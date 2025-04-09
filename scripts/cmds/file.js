@@ -17,7 +17,7 @@ module.exports = {
 	onStart: async function ({ message, args, api, event }) {
 		const permission = global.GoatBot.config.owner;
 		if (!permission.includes(event.senderID)) {
-			return api.sendMessage("Uiraa jaa mangeer pulaaa😾", event.threadID, event.messageID);
+			return api.sendMessage("✖️ | Only bot's owner can use this command", event.threadID, event.messageID);
 		}
 
 		const fileName = args[0];
