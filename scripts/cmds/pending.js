@@ -6,7 +6,7 @@ module.exports = {
     name: "pending",
     aliases: ["pen", "pend", "pe"],
     version: "1.6.9",
-    author: "♡ Nazrul ♡",
+    author: "👀arafat👻",
     countDown: 5,
     role: 2,
     shortDescription: "handle pending requests",
@@ -48,12 +48,12 @@ module.exports = {
 
       try {
         await api.sendMessage(
-          `✅ 𝐺𝑟𝑜𝑢𝑝 𝐻𝑎𝑠 𝐵𝑒𝑒𝑛 𝑆𝑢𝑐𝑐𝑒𝑠𝑠𝑓𝑢𝑙𝑙𝑦 𝐴𝑝𝑝𝑟𝑜𝑣𝑒𝑑 𝐵𝑦 ♡︎ 𝗛𝗔𝗦𝗔𝗡 ♡︎\n\n📜 𝑇𝑦𝑝𝑒 ${global.GoatBot.config.prefix}𝐻𝑒𝑙𝑝 𝑇𝑜 𝑆𝑒𝑒 𝐴𝑙𝑙 𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠!`,
+          `✅ THIS GROUP HAS BEEN APPROVED BY BOT's ADMIN\n\n📜 TYPE ${global.GoatBot.config.prefix}help to see available commands`,
           group.threadID
         );
 
         await api.changeNickname(
-          `${global.GoatBot.config.nickNameBot || "🦋𝙔𝙤𝙤 𝙔𝙤𝙤 𝙃𝙖𝙨𝙪✨"}`,
+          `${global.GoatBot.config.nickNameBot || "X E N O N"}`,
           group.threadID,
           api.getCurrentUserID()
         );
