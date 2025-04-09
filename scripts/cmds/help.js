@@ -9,7 +9,7 @@ module.exports = {
     name: "help",
     aliases:["use", "cmdl"],
     version: "1.18",
-    author: "HaSaN", 
+    author: "👀arafat👻", 
     countDown: 5,
     role: 0,
     shortDescription: {
@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `╔══════════════╗\n🔹 𝑪𝑶𝑴𝑴𝑨𝑵𝑫 𝑳𝑰𝑺𝑻 🔹\n╚══════════════╝\n`;
+      msg += `╔══════════════╗\n🔹 COMMAND LIST 🔹\n╚══════════════╝\n`;
 
       for (const [name, value] of commands) {
         if (value.config.role > 1 && role < value.config.role) continue;
@@ -60,11 +60,11 @@ module.exports = {
       const totalCommands = commands.size;
       msg += `\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆, 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗵𝗮𝘀 ${totalCommands} 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗱\n`;
       msg += `\n𝗧𝘆𝗽𝗲 ${prefix}𝗵𝗲𝗹𝗽 𝗰𝗺𝗱𝗡𝗮𝗺𝗲 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘁𝗵𝗮𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱\n`;
-      msg += `\n🫧𝑩𝑶𝑻 𝑵𝑨𝑴𝑬🫧:🎭𝘛ₒₓᵢ𝚌ᵢ𝚝ₑᵣ⭕`;
-      msg += `\n𓀬 𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑 𓀬`;
-      msg += `\n 	 					`;
-      msg += `\n~𝙉𝘼𝙈𝙀:♡︎ 𝙃𝘼𝙎𝘼𝙉 ♡︎`;
-      msg += `\n~𝙁𝘽:https://www.facebook.com/Itz.HaSaN.00`;
+      msg += `\nBot Name : X E N O N`;
+      msg += `\n`;
+      msg += `\n`;
+      msg += `\n`;
+      msg += `\n`;
 
       await message.reply({
         body: msg,
@@ -85,7 +85,7 @@ module.exports = {
         return;
       }
 
-      let msg = `╔══════════════╗\n༒︎ ${categoryName.toUpperCase()} COMMANDS ༒︎\n╚══════════════╝\n`;
+      let msg = `╔══════════════╗\n${categoryName.toUpperCase()} COMMANDS \n╚══════════════╝\n`;
 
       filteredCommands.forEach((cmd) => {
         msg += `\n☠︎︎ ${cmd.config.name} `;
@@ -110,20 +110,20 @@ module.exports = {
         const guideBody = configCommand.guide?.en || "No guide available.";
         const usage = guideBody.replace(/{p}/g, prefix).replace(/{n}/g, configCommand.name);
 
-        const response = `╭── 𝑵𝑨𝑴𝑬 ────⭓\n` +
+        const response = `╭── COMMAND INFO. ────⭓\n` +
           `│ ${configCommand.name}\n` +
-          `├── 𝑰𝑵𝑭𝑶\n` +
-          `│ 𝐷𝑒𝑠𝑐𝑟𝑖𝑝𝑡𝑖𝑜𝑛: ${longDescription}\n` +
-          `│ 𝑂𝑡ℎ𝑒𝑟 𝑁𝑎𝑚𝑒: ${configCommand.aliases ? configCommand.aliases.join(", ") : "Do not have"}\n` +
-          `│ 𝑉𝑒𝑟𝑠𝑖𝑜𝑛: ${configCommand.version || "1.0"}\n` +
-          `│ 𝑅𝑜𝑙𝑒: ${roleText}\n` +
-          `│ 𝑇𝑖𝑚𝑒 𝑃𝑒𝑟 𝐶𝑜𝑚𝑚𝑎𝑛𝑑: ${configCommand.countDown || 1}s\n` +
-          `│ 𝐴𝑢𝑡ℎ𝑜𝑟: ${author}\n` +
-          `├── 𝑼𝑺𝑨𝑮𝑬\n` +
+          `├── INFO\n` +
+          `│ DESCRIPTION : ${longDescription}\n` +
+          `│ OTHER NAME : ${configCommand.aliases ? configCommand.aliases.join(", ") : "Do not have"}\n` +
+          `│ VERSION : ${configCommand.version || "1.0"}\n` +
+          `│ ROLE: ${roleText}\n` +
+          `│ COUNT DOUWN: ${configCommand.countDown || 1}s\n` +
+          `│ AUTHOR: ${author}\n` +
+          `├── USAGE\n` +
           `│ ${usage}\n` +
-          `├── 𝑵𝑶𝑻𝑬𝑺\n` +
-          `│ 𝑇ℎ𝑒 𝑐𝑜𝑛𝑡𝑒𝑛𝑡 𝑖𝑛𝑠𝑖𝑑𝑒 ♡︎ 𝐇𝐀𝐒𝐀𝐍 ♡︎ 𝑐𝑎𝑛 𝑏𝑒 𝑐ℎ𝑎𝑛𝑔𝑒𝑑\n` +
-          `│ ♕︎ 𝐎𝐖𝐍𝐄𝐑 ♕︎:☠︎︎ 𝙃𝘼𝙎𝘼𝙉 ☠︎︎\n` +
+          `├── NOTES\n` +
+          `│ THE CONTENT INSIDE CAN BE CHANGEED\n` +
+          `│ BOT OWNER : 👀arafat👻\n` +
           `╰━━━━━━━❖`;
 
         await message.reply(response);
