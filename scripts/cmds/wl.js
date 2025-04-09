@@ -37,7 +37,7 @@ module.exports = {
     const permission = global.GoatBot.config.owner;
     if (!permission.includes(event.senderID)) {
       api.sendMessage(
-        "Ke tumi botsho 😷❄️?",
+        "✖️ | Please meet the bot's owner to use this command",
         event.threadID,
         event.messageID
       );
