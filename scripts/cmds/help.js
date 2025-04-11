@@ -9,7 +9,7 @@ module.exports = {
     name: "help",
     aliases:["use", "cmdl"],
     version: "1.18",
-    author: "👀arafat👻", 
+    author: "👀ꪖ𝘳ꪖ​ᠻꪖ𝓽👻", 
     countDown: 5,
     role: 0,
     shortDescription: {
@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `╔══════════════╗\n🔹 COMMAND LIST 🔹\n╚══════════════╝\n`;
+      msg += `╔═══════════╗\n🔹 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐋𝐈𝐒𝐓 🔹\n╚═══════════╝\n`;
 
       for (const [name, value] of commands) {
         if (value.config.role > 1 && role < value.config.role) continue;
@@ -58,10 +58,10 @@ module.exports = {
       });
 
       const totalCommands = commands.size;
-      msg += `\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆, 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗵𝗮𝘀 ${totalCommands} 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗱\n`;
-      msg += `\n𝗧𝘆𝗽𝗲 ${prefix}𝗵𝗲𝗹𝗽 𝗰𝗺𝗱𝗡𝗮𝗺𝗲 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘁𝗵𝗮𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱\n`;
-      msg += `\nBot Name : X E N O N`;
+      msg += `\n𝐂𝐮𝐫𝐫𝐞𝐧𝐭𝐥𝐲 𝐭𝐡𝐞 𝐛𝐨𝐭 𝐡𝐚𝐬 ${totalCommands} 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐭𝐡𝐚𝐭𝐬 𝐜𝐚𝐧 𝐛𝐞 𝐮𝐬𝐞\n`;
       msg += `\n`;
+      msg += `\n𝐁𝐎𝐓 𝐍𝐀𝐌𝐄 : ✨ ᥊​ ꫀ​ ꪀ​ ꪮ​ ꪀ 🍼`;
+      msg += `\n𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑 : 👀ꪖ𝘳ꪖ​ᠻꪖ𝓽👻`;
       msg += `\n`;
       msg += `\n`;
       msg += `\n`;
@@ -85,7 +85,7 @@ module.exports = {
         return;
       }
 
-      let msg = `╔══════════════╗\n${categoryName.toUpperCase()} COMMANDS \n╚══════════════╝\n`;
+      let msg = `╔══════════╗\n${categoryName.toUpperCase()} COMMANDS \n╚══════════╝\n`;
 
       filteredCommands.forEach((cmd) => {
         msg += `\n☠︎︎ ${cmd.config.name} `;
@@ -110,7 +110,7 @@ module.exports = {
         const guideBody = configCommand.guide?.en || "No guide available.";
         const usage = guideBody.replace(/{p}/g, prefix).replace(/{n}/g, configCommand.name);
 
-        const response = `╭── COMMAND INFO. ────⭓\n` +
+        const response = `╭── COMMAND INFO ────⭓\n` +
           `│ ${configCommand.name}\n` +
           `├── INFO\n` +
           `│ DESCRIPTION : ${longDescription}\n` +
@@ -123,7 +123,7 @@ module.exports = {
           `│ ${usage}\n` +
           `├── NOTES\n` +
           `│ THE CONTENT INSIDE CAN BE CHANGEED\n` +
-          `│ BOT OWNER : 👀arafat👻\n` +
+          `│ BOT OWNER : 👀ꪖ𝘳ꪖ​ᠻꪖ𝓽👻\n` +
           `╰━━━━━━━❖`;
 
         await message.reply(response);
