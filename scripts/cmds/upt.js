@@ -7,7 +7,7 @@ module.exports = {
   config: {
     name: "uptime",
     aliases: ["up", "upt"],
-    author: "ArYAN",
+    author: "👀ꪖ𝘳ꪖ​ᠻꪖ𝓽👻",
     countDown: 0,
     role: 0,
     category: "system",
@@ -50,7 +50,7 @@ module.exports = {
 
       const timeStart = Date.now();
       await api.sendMessage({
-        body: "🔎| checking........",
+        body: "👀 Please wait 👻",
       }, event.threadID);
 
       const ping = Date.now() - timeStart;
@@ -68,12 +68,14 @@ module.exports = {
 │  ${uptimeFormatted}
 ├───────────────⟡
 │ ✅ 𝗢𝗧𝗛𝗘𝗥 𝗜𝗡𝗙𝗢
-│𝐷𝑎𝑡𝑒: ${date}
-│𝑇𝑖𝑚𝑒: ${time}
-│𝑈𝑠𝑒𝑟𝑠: ${allUsers.length}
-│𝑇ℎ𝑟𝑒𝑎𝑑𝑠: ${allThreads.length}
-│𝑃𝑖𝑛𝑔: ${ping}𝚖𝚜
-│𝑠𝑡𝑎𝑡𝑢𝑠: ${pingStatus}
+│Date: ${date}
+│Time: ${time}
+│Users: ${allUsers.length}
+│Threads: ${allThreads.length}
+│Ping: ${ping}𝚖𝚜
+│Status: ${pingStatus}
+├───────────────⟡
+├──  👀ꪖ𝘳ꪖ​ᠻꪖ𝓽👻
 ╰───────────────⟡
 `;
 
