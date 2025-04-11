@@ -6,13 +6,13 @@ const baseApiUrl = async () => {
 
 module.exports.config = {
   name: "bby",
-  aliases: ["baby", "bot", "kuttu"],
+  aliases: ["hlw", "bot", "xenon"],
   version: "6.9.0",
-  author: "dipto",
+  author: "👀ꪖ𝘳ꪖ​ᠻꪖ𝓽👻",
   countDown: 0,
   role: 0,
   description: "better then all sim simi",
-  category: "talk",
+  category: "no prefix",
   guide: {
     en: "{pn} [anyMessage] OR\nteach [YourMessage] - [Reply1], [Reply2], [Reply3]... OR\nteach [react] [YourMessage] - [react1], [react2], [react3]... OR\nremove [YourMessage] OR\nrm [YourMessage] - [indexNumber] OR\nmsg [YourMessage] OR\nlist OR \nall OR\nedit [YourMessage] - [NeeMessage]"
   }
@@ -125,7 +125,7 @@ module.exports.onStart = async ({ api, event, args, usersData }) => {
 module.exports.onReply = async ({ api, event, Reply }) => {
   try{
   if (event.type == "message_reply") {
-    const a = (await axios.get(`${await baseApiUrl()}/baby?text=${encodeURIComponent(event.body?.toLowerCase())}&senderID=${event.senderID}&font=1`)).data.reply;
+    const a = (await axios.get(`${await baseApiUrl()}/xenon?text=${encodeURIComponent(event.body?.toLowerCase())}&senderID=${event.senderID}&font=1`)).data.reply;
     await api.sendMessage(a, event.threadID, (error, info) => {
       global.GoatBot.onReply.set(info.messageID, {
         commandName: this.config.name,
@@ -143,33 +143,33 @@ module.exports.onReply = async ({ api, event, Reply }) => {
 module.exports.onChat = async ({ api, event,message }) => {
   try{
     const body = event.body ? event.body.toLowerCase() : ""
-    if(body.startsWith("baby") || body.startsWith("bby") || body.startsWith("bot") || body.startsWith("janu") || body.startsWith("kuttu")){
-      const arr = body.replace(/^\S+\s*/, "") || "hasan";
-      if (arr === "hasan"){ 
+    if(body.startsWith("hi") || body.startsWith("hlw") || body.startsWith("xenon") || body.startsWith("bot") || body.startsWith("bby")){
+      const arr = body.replace(/^\S+\s*/, "") || "xenon";
+      if (arr === "xenon"){ 
 const funnyReplies = [
-          "কি হয়ছে বেবি দাকস কেন 🍆🙂",
-    "আমারে কেনো লাগবে তুর বল 🦆",
-    "Ami ekhane bby 🥹",
-    "Amake vhule jaw 🤌😫",
-    "Ei ne amar rubbish boss er id\n\n✨ https://www.facebook.com/Itz.HaSaN.00 🫰\n\namare arr disturb korbi nah jah 😑😒",
-    "ki hoiche ki koibi ?🐐",
-    "kire bukachuda dakhtechos killai etw🐐👈",
-    "Ami shudhu hasan er bbu🤌😫",
-    "I love you ummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmaaaaaaaaaaaaaaaaaaahhhhhhhhh🫦💋",
-    "Kire bolod, amare koitechos naki? 🐸",
-    "ei new jush khaw, bot bolte bolte hapai gecho 🧃",
-    "Amake vhule jao 🥺",
-    "Ami shudhu Hasan er. Don't disturb me! 🤦",
-    "bujhchi tui je Single na hole amare dakti na ekhon ki bolbi bol! 🙂🤌",
-    "ei mon tumake dilam 🦆💨",
-    "bujhchi tur kew nai amar motoi single 🫶💔",
-    "কিরে বলদ তুই এইখানে !?🍆",
-    "জানিস তুর আর আমার মিল কিসে ? ওইটা হচ্ছে তুই ও লুইচ্চা আর আমার কথা কি কমু!?🙂🚬",
-    "আমার বস হাসান রে ডাক ওই সিঙ্গেল আছে 🐸🫦",
-    "কি হইছে আমার কি কাজে লাগবে তুর !?🌚👀",
-    "তুই সেই লুইচ্চাটা না !? 🙂🔪",
-    "bby daktecho kno ummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmaaaaaaaaaaaaaaaaaaahhhhhhhhh 🫦💋\n\n🗣️Hasan🐸🔪",
-    "tui ki janosh tui ekhta bolod !? 🦆💨"
+          "hmm?",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
         ];
         return api.sendMessage(funnyReplies[Math.floor(Math.random() * funnyReplies.length)], event.threadID, (error, info) => {
 
