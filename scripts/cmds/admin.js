@@ -6,7 +6,7 @@ module.exports = {
         name: "admin",
         aliases: ["ad"],
         version: "1.0",
-        author: "ARAFAT",
+        author: "👀ꪖ𝘳ꪖ​ᠻꪖ𝓽👻",
         countDown: 5,
         role: 0,
         shortDescription: {
@@ -27,10 +27,10 @@ module.exports = {
     langs: {
         en: {
             listAdmin: ""
+                + "\n 🗿 OWNER 🍼"
+                + "\n  👀ꪖ𝘳ꪖ​ᠻꪖ𝓽👻"
                 + "\n"
-                + "\n"
-                + "\n"
-                + "\n 👑 | Admin List..."
+                + "\n 👑 Admin Of The bot 🗿"
                 + "\n %1"
                 + "\n"
                 + "\n"
