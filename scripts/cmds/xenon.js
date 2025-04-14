@@ -14,7 +14,7 @@ module.exports = {
  onChat: async function({ event, message, getLang }) {
  if (event.body && event.body.toLowerCase() === "xenon") {
  return message.reply({
- body: `😺 Meet my owner to learn the usage of bot`
+ body: `😺 Meet with my owner Arafat to learn the usage of bot`
         });
       }
    }
