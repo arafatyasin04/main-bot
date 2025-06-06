@@ -1,6 +1,6 @@
 module.exports = {
  config: {
-	 name: "xenon",
+	 name: "unknown",
 	 version: "1.0",
 	 author: "👀arafat👻",//remodified by cliff
 	 countDown: 5,
@@ -14,7 +14,7 @@ module.exports = {
  onChat: async function({ event, message, getLang }) {
  if (event.body && event.body.toLowerCase() === "xenon") {
  return message.reply({
- body: `😺 Meet with my owner Arafat to learn the usage of bot`
+ body: `𝗛𝗲𝗿𝗲 𝗶𝘀 𝗺𝘆 𝗼𝘄𝗻𝗲𝗿'𝘀 𝗳𝗮𝗰𝗲𝗯𝗼𝗼𝗸 𝗮𝗰𝗰𝗼𝘂𝗻𝘁 : facebook.com/xuzt.arafat`
         });
       }
    }
