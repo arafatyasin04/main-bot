@@ -6,28 +6,28 @@ const path = require('path');
 module.exports = {
 	config: {
 		name: "owner",
-		aliases: ["info","arafat","Arafat"],
-		author: "Arafat",
+		aliases: ["info","arafat","Arafat","admin"],
+		author: "👀 ꪖ᥅ꪖᠻꪖꪻ 🍼",
 		role: 0,
 		shortDescription: " ",
 		longDescription: "",
-		category: "👀arafat👻",
+		category: "👀 ꪖ᥅ꪖᠻꪖꪻ 👻",
 		guide: "{pn}"
 	},
 
 	onStart: async function ({ api, event }) {
 		try {
 			const ownerInfo = {
-				name: 'Arafat Yasin',
-				class: 'SSC - 2028 batch',
-				group: 'null',
-				gender: 'Male',
-				Birthday: '09 August, 2010',
-				religion: 'Islam',
-				hobby: 'To be a software engineer',
+				name: 'ᴀʀᴀғᴀᴛ ʏᴀsɪɴ',
+				class: 'ssᴄ - 2028 ʙᴀᴛᴄʜ',
+				group: 'ɴᴜʟʟ',
+				gender: 'ᴍᴀʟᴇ',
+				Birthday: '09 ᴀᴜɢᴜsᴛ, 2010',
+				religion: 'ɪsʟᴀᴍ',
+				hobby: 'ᴛᴏ ʙᴇ ᴀ sᴏғᴛᴡᴀʀᴇ ᴇɴɢɪɴᴇᴇʀ',
 				Fb: 'https://www.facebook.com/xuzt.arafat',
-				Relationship: 'Single',
-				Height: '5"'
+				Relationship: 'sɪɴɢᴇʟ',
+				Height: '5"2''
 			};
 
 			const bold = '';
@@ -38,22 +38,22 @@ module.exports = {
 			}
 
 			const videoResponse = await axios.get(bold, { responseType: 'arraybuffer' });
-			const videoPath = path.join(tmpFolderPath, 'owner_video.mp4');
+			const videoPath = path.join(tmpFolderPath, '');
 
 			fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
 
 			const response = `
-𓀬 𝐎𝐖𝐍𝐄𝐑 𝐈𝐍𝐅𝐎 𓀬 \n
- ~𝙉𝘼𝙈𝙀: ${ownerInfo.name}
- ~𝘾𝙇𝘼𝙎𝙎: ${ownerInfo.class}
- ~𝙂𝙍𝙊𝙐𝙋: ${ownerInfo.group}
- ~𝙂𝙀𝙉𝘿𝙀𝙍: ${ownerInfo.gender}
- ~𝘽𝙄𝙍𝙏𝙃𝘿𝘼𝙔: ${ownerInfo.Birthday}
- ~𝙍𝙀𝙇𝙄𝙂𝙄𝙊𝙉: ${ownerInfo.religion}
- ~𝙍𝙀𝙇𝘼𝙏𝙄𝙊𝙉𝙎𝙃𝙄𝙋: ${ownerInfo.Relationship}
- ~𝙃𝙊𝘽𝘽𝙔: ${ownerInfo.hobby}
- ~𝙃𝙀𝙄𝙂𝙃𝙏: ${ownerInfo.Height}
- ~𝙁𝘽: ${ownerInfo.Fb}
+ ~ 𝕆𝕎ℕ𝔼ℝ 𝕀ℕ𝔽𝕆 ~ \n
+ 𝗡𝗮𝗺𝗲 : ${ownerInfo.name}
+ 𝗦𝘁𝘂𝗱𝘆 : ${ownerInfo.class}
+ 𝗚𝗿𝗼𝘂𝗽 : ${ownerInfo.group}
+ 𝗚𝗲𝗻𝗱𝗲𝗿 : ${ownerInfo.gender}
+ 𝗗𝗮𝘁𝗲 𝗼𝗳 𝗯𝗶𝗿𝘁𝗵 : ${ownerInfo.Birthday}
+ 𝗥𝗲𝗹𝗶𝗴𝗶𝗼𝗻 : ${ownerInfo.religion}
+ 𝗥𝗲𝗹𝗮𝘁𝗶𝗼𝗻𝘀𝗵𝗶𝗽 𝘀𝘁𝗮𝘁𝘂𝘀 : ${ownerInfo.Relationship}
+ 𝗛𝗼𝗯𝗯𝘆 : ${ownerInfo.hobby}
+ 𝗛𝗲𝗶𝗴𝗵𝘁 : ${ownerInfo.Height}
+ 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 : ${ownerInfo.Fb}
 			`;
 
 			await api.sendMessage({
@@ -66,7 +66,17 @@ module.exports = {
 			api.setMessageReaction('🍼', event.messageID, (err) => {}, true);
 		} catch (error) {
 			console.error('Error in ownerinfo command:', error);
-			return api.sendMessage('An error occurred while processing the command.', event.threadID);
+			return api.sendMessage(' ~ 𝕆𝕎ℕ𝔼ℝ 𝕀ℕ𝔽𝕆 ~ \n
+ 𝗡𝗮𝗺𝗲 : ${ownerInfo.name}
+ 𝗦𝘁𝘂𝗱𝘆 : ${ownerInfo.class}
+ 𝗚𝗿𝗼𝘂𝗽 : ${ownerInfo.group}
+ 𝗚𝗲𝗻𝗱𝗲𝗿 : ${ownerInfo.gender}
+ 𝗗𝗮𝘁𝗲 𝗼𝗳 𝗯𝗶𝗿𝘁𝗵 : ${ownerInfo.Birthday}
+ 𝗥𝗲𝗹𝗶𝗴𝗶𝗼𝗻 : ${ownerInfo.religion}
+ 𝗥𝗲𝗹𝗮𝘁𝗶𝗼𝗻𝘀𝗵𝗶𝗽 𝘀𝘁𝗮𝘁𝘂𝘀 : ${ownerInfo.Relationship}
+ 𝗛𝗼𝗯𝗯𝘆 : ${ownerInfo.hobby}
+ 𝗛𝗲𝗶𝗴𝗵𝘁 : ${ownerInfo.Height}
+ 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 : ${ownerInfo.Fb} ', event.threadID);
 		}
 	}
 };
