@@ -3,7 +3,7 @@ module.exports = {
         name: "balance",
         aliases: ["bal"],
         version: "1.5",
-        author: "♡︎ 𝐻𝐴𝑆𝐴𝑁 ♡︎",
+        author: "ꪖ᥅ꪖᠻꪖꪻ",
         countDown: 5,
         role: 0,
         description: {
@@ -57,10 +57,10 @@ module.exports = {
         const formattedMoney = this.formatMoney(money);
 
         if (isSelfCheck) {
-            return message.reply(`💰 𝑌𝑜𝑢𝑟 𝐵𝑎𝑙𝑎𝑛𝑐𝑒 𝑖𝑠 ${formattedMoney} $ 🤑`);
+            return message.reply(`💰 𝗬𝗼𝘂𝗿 𝗯𝗮𝗹𝗮𝗻𝗰𝗲 𝗶𝘀 ${formattedMoney}$ 🤑`);
         } 
         else {
-            return message.reply(`💳 𝑩𝑨𝑳𝑨𝑵𝑪𝑬 𝑰𝑵𝑭𝑶 💳\n💰 ${userData?.name || "𝑈𝑠𝑒𝑟"} - 𝐻𝑎𝑠 ${formattedMoney} $ 💸\n💫 𝐻𝑎𝑣𝑒 𝑎 𝑔𝑜𝑜𝑑 𝑑𝑎𝑦 💫`);
+            return message.reply(`💳 𝗕𝗮𝗹𝗮𝗻𝗰𝗲 𝗜𝗻𝗳𝗼 💳\n💰 ${userData?.name || "𝗨𝘀𝗲𝗿"} - 𝗵𝗮𝘀 ${formattedMoney} $ 💸\n💫 𝗛𝗮𝘃𝗲 𝗮 𝗴𝗼𝗼𝗱 𝗱𝗮𝘆! 💫`);
         }
     },
 
