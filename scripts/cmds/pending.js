@@ -48,12 +48,12 @@ module.exports = {
 
       try {
         await api.sendMessage(
-          `✅ THIS GROUP HAS BEEN APPROVED BY BOT's ADMIN\n\n📜 TYPE ${global.GoatBot.config.prefix}help to see available commands`,
+          `𝗛𝗲𝗹𝗹𝗼 𝗴𝘂𝘆𝘀, 𝗜'𝗺 𝗯𝗮𝗰𝗸 😛`,
           group.threadID
         );
 
         await api.changeNickname(
-          `${global.GoatBot.config.nickNameBot || "X E N O N"}`,
+          `${global.GoatBot.config.nickNameBot || "👀 ꪖ ᥅ ꪖ ᠻ ꪖ ꪻ 👻"}`,
           group.threadID,
           api.getCurrentUserID()
         );
