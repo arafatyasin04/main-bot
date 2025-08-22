@@ -8,7 +8,7 @@ const fs = require("fs");
 module.exports = {
   config: {
     name: "uptime2",
-    aliases: ["upt", "up","up2"],
+    aliases: ["upt2","up2"],
     version: "1.6",
     author: "MaHi + Modified by Ariyan",
     role: 0,
