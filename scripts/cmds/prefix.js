@@ -2,7 +2,7 @@ module.exports = {
  config: {
 	 name: "prefix",
 	 version: "1.0",
-	 author: "Tokodori_Frtiz",//remodified by cliff
+	 author: "~ Aʀᴀғᴀᴛ 🐱🐾",//remodified by cliff
 	 countDown: 5,
 	 role: 0,
 	 shortDescription: "no prefix",
@@ -15,12 +15,11 @@ module.exports = {
  if (event.body && event.body.toLowerCase() === "prefix") {
  return message.reply({
  body: `
-Yo, my prefix is [  -  ]\n
-𝗦𝗢𝗠𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 𝗧𝗛𝗔𝗧 𝗠𝗔𝗬 𝗛𝗘𝗟𝗣 𝗬𝗢𝗨:
-➥ 𝙊𝙒𝙉𝙀𝙍: Arafat Yasin
-➥ ✓-sim [bby] -> talk to bot
-➥ ✓-callad [message] -> report any problem encountered
-➥ ✓-help -> usage of command\n\nHave fun using it enjoy!❤️\n`,
+YOO, ᗰY ᑭᖇᗴᖴI᙭ IՏ [ - ]\n
+Sᴏᴍᴇ Cᴏᴍᴍᴀɴᴅs Tʜᴀᴛ Mᴀʏ Hᴇʟᴘ Yᴏᴜ:
+➥ Oᴡɴᴇʀ : 👀 ꪖ᥅ꪖᠻꪖꪻ 👻
+➥ ✓-𝐜𝐚𝐥𝐥𝐚𝐝 [𝐦𝐞𝐬𝐬𝐚𝐠𝐞] -> 𝐫𝐞𝐩𝐨𝐫𝐭 𝐚𝐧𝐲 𝐩𝐫𝐨𝐛𝐥𝐞𝐦 𝐞𝐧𝐜𝐨𝐮𝐧𝐭𝐞𝐫𝐞𝐝
+➥ ✓-𝐡𝐞𝐥𝐩 -> 𝐬𝐞𝐞 𝐭𝐡𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝'𝐬 𝐥𝐢𝐬𝐭 \n\n 𝙷𝚊𝚟𝚎 𝚏𝚞𝚗 𝚋𝚢 𝚞𝚜𝚒𝚗𝚐 𝚒𝚝, 𝚎𝚗𝚓𝚘𝚢!❤️\n`,
  attachment: await global.utils.getStreamFromURL("https://i.imgur.com/M4luPbE.gif")
  });
  }
