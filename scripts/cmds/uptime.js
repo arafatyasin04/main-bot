@@ -1,4 +1,4 @@
-📝 Output: const os = require('os');
+const os = require('os');
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
@@ -90,4 +90,4 @@ function prettyBytes(bytes) {
     i++;
   }
   return `${bytes.toFixed(2)} ${units[i]}`;
-      }
+}
