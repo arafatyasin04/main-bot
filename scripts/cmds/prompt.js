@@ -1,4 +1,4 @@
-📝 Output: const axios = require("axios");
+const axios = require("axios");
 
 module.exports = {
   config: {
